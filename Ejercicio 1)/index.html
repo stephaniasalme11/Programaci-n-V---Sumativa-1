@@ -1,0 +1,26 @@
+<!--Programa que muestra un mensaje de Bienvenida, fecha y hora actuales. Por: Stephanía Salmerón. 
+    Para: Programación V-UBA-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script> 
+        let fechaActual = new Date(); //Declaramos la variable fechaActual y utilizamosnew Date para que nos muestre la fecha y hora en tiempo real 
+        let dia = fechaActual.getDate(); //Utilizamos los métodos get para día, mes, año, hora y minutos
+        let mes = fechaActual.getMonth() + 1 ; // colocamos el +1 para que tenga el valor de mayo y no de abril, ya que enero empezaría en 0 
+        let año = fechaActual.getFullYear();
+        let hora = fechaActual.getHours();
+        let minutos = fechaActual.getMinutes();
+        
+    let mensaje = "Bienvenido/a! Hoy es " + dia + "/" + mes + "/" + año + " y son las " + hora + ":" + minutos; //Por último creamos una variable llamada mensaje para mostrar una bienvenida, la fecha y hora actuales 
+
+    alert(mensaje);
+
+    </script>
+</body>
+</html>
